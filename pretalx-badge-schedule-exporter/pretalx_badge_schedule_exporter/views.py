@@ -10,7 +10,7 @@ from .forms import BadgeScheduleExporterSettingsForm
 
 
 class BadgeScheduleExporterSettingsView(PermissionRequired, FormView):
-    permission_required = "orga.change_settings"
+    permission_required = "event.update_event"
     template_name = "pretalx_badge_schedule_exporter/settings.html"
     form_class = BadgeScheduleExporterSettingsForm
 
