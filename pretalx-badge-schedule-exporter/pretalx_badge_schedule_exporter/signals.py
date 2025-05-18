@@ -6,7 +6,7 @@ from pretalx.common.signals import register_data_exporters
 
 @receiver(nav_event_settings)
 def pretalx_badge_schedule_exporter_settings(sender, request, **kwargs):
-    if not request.user.has_perm("orga.change_settings", request.event):
+    if not request.user.has_perm("event.update_event", request.event):
         return []
     return [
         {
