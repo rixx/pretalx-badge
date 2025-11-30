@@ -3,7 +3,6 @@ import json
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
-import vobject
 from django.template.loader import get_template
 from django.utils.functional import cached_property
 from i18nfield.utils import I18nJSONEncoder
